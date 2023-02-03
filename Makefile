@@ -3,7 +3,7 @@ DISTVERSIONPREFIX=	v
 DISTVERSION=	0.6.0
 CATEGORIES=	net-im
 PKGNAMESUFFIX=	-devel
-MASTER_SITES?=	https://github.com/${GH_ACCOUNT}/${PORTNAME}/releases/download/v${DISTVERSION}/:web
+# MASTER_SITES?=	https://github.com/${GH_ACCOUNT}/${PORTNAME}/releases/download/v${DISTVERSION}/:web
 DISTFILES?=	${PORTNAME}_${DISTVERSION}_web-assets.tar.gz:web
 
 MAINTAINER=	freebsd@igalic.co
@@ -21,6 +21,7 @@ USE_RC_SUBR=	${PORTNAME}
 
 USE_GITHUB=	yes
 GH_ACCOUNT=	superseriousbusiness
+GH_TAGNAME=	271da01
 
 SUB_LIST=	DBDIR="${DBDIR}" \
 		GROUP="${GROUPS}" \
